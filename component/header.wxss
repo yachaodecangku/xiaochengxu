@@ -1,0 +1,23 @@
+
+.title{
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.header{
+  height:60rpx;
+  width:100%;
+  padding:70rpx 0 20rpx 0;
+  background: #d43c33;
+  color:white;
+}
+.header .icon{
+  float:left;
+  margin:0 30rpx;
+}
+.header .icon,.header .icon>image{
+  width:60rpx;
+  height:60rpx;
+  color:white;
+}

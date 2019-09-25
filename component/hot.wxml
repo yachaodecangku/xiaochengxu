@@ -1,0 +1,26 @@
+<!--component/hot.wxml-->
+
+<view>
+
+  <view class="hot-title">
+     <view class="pic">
+       <image  src="/component/1.jpg"></image>
+     </view>
+   </view>
+
+<!--
+//图片太大
+<swiper class='banner' autoplay='true' 
+    interval="3000"  circular="true">
+    <swiper-item wx:for="{{bannerList}}" wx:key="index">
+      <image src="{{item.imageUrl}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  -->
+  
+<slot />
+
+
+</view>
+
+

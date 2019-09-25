@@ -1,0 +1,12 @@
+<view class="tabbar">
+  <view wx:for="{{list}}" class="{{item.name==current?'active':''}}"
+  bindtap='change'
+  data-num="{{item.name}}" wx:key="index">
+  <text>{{item.title}}</text>
+  </view>
+  
+ 
+ 
+ 
+
+</view>

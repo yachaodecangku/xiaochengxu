@@ -1,0 +1,9 @@
+
+<my-header name="{{value}}-的搜索结果" icon=""></my-header>
+<songList songListArray="{{songListArray}}"
+ bindtap="play" data-songid="{{item.id}}"
+ bindchangemusic="handlechange"  list-data=""
+ 
+/>
+
+<my-player songid="{{id}}"></my-player>

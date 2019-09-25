@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-header": "/component/header",
+    "songList": "/component/songList",
+    "my-player": "/component/player"
+
+
+  }
+}

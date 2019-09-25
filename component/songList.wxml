@@ -1,0 +1,16 @@
+
+<view class="song-list">
+<!-- 专辑列表 -->
+  <view class='song-item' wx:for="{{songlist}}" wx:key="index">
+    <view class='song-name'>{{item.name}}</view>
+    <view class="song-bottom">
+      <view class='singer'>{{item.song.artists[0].name}}-</view>
+      <view class='issue'>{{item.song.album.name}}</view>
+    </view>
+    
+    <view class='playBtn'>
+       <image src="/component/play.png" bindtap="choose"  data-songid="{{item.id}}" >
+       </image>
+    </view>
+  </view>
+</view>

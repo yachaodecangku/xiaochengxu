@@ -1,0 +1,17 @@
+<!--component/hotList.wxml-->
+
+<view class="song-list">
+<!-- 专辑列表 -->
+  <view class='song-item' wx:for="{{hotlist}}" wx:key="index"  lazy-load="true">
+    <view class='song-name'>{{item.name}}</view>
+    <view class="song-bottom">
+      <view class='singer'>{{item.ar[0].name}}-</view>
+      <view class='issue'>{{item.name}}</view>
+    </view>
+    
+    <view class='playBtn'>
+       <image src="/component/play.png" bindtap="choose"  data-songid="{{item.id}}" >
+       </image>
+    </view>
+  </view>
+</view>

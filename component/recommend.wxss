@@ -1,0 +1,49 @@
+.recommend, .banner{
+  width: 750rpx;
+  height: 370rpx;
+  margin:10rpx 0;
+}
+image{
+  display: block;
+  width: 750rpx;
+  height: 350rpx;
+}
+.title{
+  width:100%;
+  padding:0 30rpx;
+  font-size: 17px;
+  line-height:22px; 
+  border-left:2px solid #d33a31
+}
+.r-list{
+  width: 730rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.r-list .r-item{
+  position: relative;
+  width: 230rpx;
+  margin-bottom: 50rpx;
+  /* height: */
+}
+.r-list .r-item image{
+  width: 248rpx;
+  height: 240rpx;
+}
+.r-list .r-item .item-title{
+  font-size: 13px;
+  height: 36px;
+  overflow: hidden;
+  margin-left: 10rpx;
+  
+}
+.r-list .r-item .play-count{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  color:white;
+}
+

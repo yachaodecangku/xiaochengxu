@@ -1,0 +1,46 @@
+.search{
+  position: relative;
+  width:750rpx;
+  height:105rpx;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #ddd;
+  padding-top:30rpx;
+}
+.search image{
+  position: absolute;
+  display: block;
+  top:20px;
+  right:30px;
+  width:26px;
+  height:26px;
+}
+.search input{
+  width:650rpx;
+  height:65rpx;
+  background: #ebecec;
+  border-radius: 30rpx;
+  margin:auto;
+  color:rgb(160, 89, 89);
+  font-size: 16px;
+  text-indent:40rpx;
+}
+.hot-search{
+  padding:30rpx 0 30rpx 40rpx; 
+  font-size:30rpx;
+  font-weight:bold;
+}
+.qq{
+  display: inline-block;
+  width:750rpx;
+  padding:10rpx 20rpx 20rpx 50rpx;
+  font-size: 24rpx;
+ }
+.qq .ya{
+  float:left;
+  margin:10rpx 20rpx;
+  background: #ddd;
+  border-radius:30rpx;
+  padding:10rpx 30rpx 10rpx 30rpx;
+  
+  
+}

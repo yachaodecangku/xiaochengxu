@@ -1,0 +1,13 @@
+module.exports.formateNum = function formateNum(num){
+  if(num<Math.pow(10,4)){
+    return num
+  }
+  if (num >= Math.pow(10, 4) && num < Math.pow(10, 8)) {
+    num = ~~(num/100000)
+    return num +"万"
+  }
+  if (num >= Math.pow(10, 8)) {
+    num = ~~(num / 100000000)
+    return num + "亿"
+  }
+}

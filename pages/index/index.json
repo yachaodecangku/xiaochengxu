@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "my-header": "/component/header",
+    "my-tabbar": "/component/tabbar",
+    "my-recommend":"/component/recommend",
+    "my-player": "/component/player",
+    "songList": "/component/songList",
+    "hotList": "/component/hotList",
+    "my-hot": "/component/hot",
+    "my-search":"/component/search"
+  }
+}

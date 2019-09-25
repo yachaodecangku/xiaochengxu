@@ -1,0 +1,32 @@
+
+<my-header name="北城沐歌" icon=""></my-header>
+
+<my-tabbar bindmyevent="handel" list="{{list}}" current="{{current}}"></my-tabbar>
+
+<!-- https://api.wulv5.com/music/ -->
+<!-- 不同区域的展示 -->
+<!-- 推荐歌曲  大分类-->
+<my-recommend wx:if="{{current === 'recommend'}}">
+<!--最新音乐--> 
+  <view class='latest-list'>
+    <view class='title'>最新音乐</view>
+    <songList url="https://api.wulv5.com/music/personalized/newsong"   
+    bindchangemusic="handlechange"  list-data="" />  
+  </view>   
+</my-recommend> 
+
+<!-- 热搜 -->
+<my-hot class='hot' wx:if="{{current === 'hot'}}">
+    <view class='latest-list'>
+    
+    <hotList url="https://api.wulv5.com/music/top/list?idx=1"   
+    bindchangemusic="handlechange"  list-data="" />  
+  </view>   
+</my-hot>
+
+<!-- 搜索 -->
+<my-search class='search' wx:if="{{current === 'search'}}">
+   
+</my-search>
+
+<my-player songid="{{id}}"></my-player>

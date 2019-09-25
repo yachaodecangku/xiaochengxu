@@ -1,0 +1,31 @@
+
+<view>
+  <view class="banner">
+        <image class="banner-img" src="{{List.backgroundCoverUrl}}"></image>
+        
+        <view class="banner-title">{{List.name}}</view>
+        <view class="banner-description">{{List.description}}</view>
+</view>
+<view class="song-list">
+
+   
+ <view class='song-item' wx:for="{{SongList}}" wx:key="index" 
+  
+>
+    <view class='song-name'>{{item.name}}</view>
+    <view class="song-bottom">
+
+      <view class='singer'>{{item.ar[0].name}}</view>
+      <view class='issue'>{{item.song.album.name}}</view>
+    </view>
+    
+    <view class='playBtn'>
+       <image src="/component/play.png" bindtap="play"      bindchangemusic="handlechange"  list-data=""   data-songid="{{item.id}}">
+ </image>
+    </view>
+  </view> 
+</view>
+</view>
+<my-player songid="{{id}}"></my-player>
+
+

@@ -1,0 +1,22 @@
+<view class='player'>
+  <view class="issue">
+    <image src='{{url}}' mode='aspectFill'></image>
+  </view>
+  <view class='main'>
+    <view class='title'>{{title}}</view>
+    <view class='slider'>
+      <slider
+        value='{{progress}}'
+        block-size ="12"
+        activeColor="#8c617e"
+        bindchange='progressJump'
+        backgroundColor="#8b92b6"
+      ></slider>
+    </view>
+  </view>
+  
+  <view class='playbtn'>
+    <image wx:if="{{state==='paused'}}" src="/component/play.png" bindtap='play'></image>
+    <image wx:else src="/component/pauseBtn.png" bindtap='play'></image>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="title">
+  <view class="header">
+ <view class="icon">
+  <image src="./music.png"></image>
+  </view>
+  <view>{{name}}</view>
+</view>
+</view>

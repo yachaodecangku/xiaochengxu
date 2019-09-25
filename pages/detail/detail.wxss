@@ -1,0 +1,77 @@
+.banner {
+		height: 400rpx;
+		overflow: hidden;
+		position: relative;
+		background-color: #ccc;
+    z-index: -1;
+    color:#fff;
+	}
+	.banner-img {
+    display: block;
+		width: 100%;
+    height:100%;
+    z-index: 99;
+	}
+	.banner-title {
+		max-height: 84rpx;
+		overflow: hidden;
+		position: absolute;
+		top: 70rpx;
+		width: 90%;
+		font-size: 35rpx;
+		font-weight: 400;
+		line-height: 42rpx;
+		color:#fff;
+		z-index: 11;
+	}
+	.banner-description {
+		position: absolute;
+		bottom: 32rpx;
+		overflow: hidden;
+    font-size:28rpx;
+		max-height: 85rpx;
+	}
+  .song-list{
+  width:750rpx;
+  padding:20rpx 0 0 40rpx;
+
+}
+.song-item{
+  overflow: hidden;
+  position: relative;
+  height:64px;
+  padding:0 80rpx 0 0;
+  border-bottom:1px solid #ddd;
+  
+}
+.song-item  .song-name{
+  overflow: hidden;
+  height:20px;
+  font-size:16px;
+  margin-top: 20rpx;
+  padding:0 90rpx 0 0;
+}
+.song-item .song-bottom{
+  overflow: hidden;
+  display: flex;
+  height:40px;
+  font-size: 13px;
+  line-height: 40px;
+  color:#888;
+  padding:0 80rpx 0 0;
+}
+.song-item .song-bottom .singer{
+  margin-right: 10rpx;
+}
+.song-item .playBtn{
+  position: absolute;
+  right:80rpx;
+  top:40rpx;
+  width:26px;
+  height:26px;
+}
+.song-item .playBtn image{
+  display: block;
+  width:26px;
+  height:26px;
+}

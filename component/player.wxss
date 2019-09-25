@@ -1,0 +1,47 @@
+.player{
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 150rpx;
+  background:linear-gradient(to right,#654ea3,#eaafc8);
+  background:linear-gradient(to right,#355c7d,#6c5b7b,#c06c84);
+}
+.player .issue{
+  margin: 25rpx;
+}
+
+.main{
+  width: 470rpx;
+}
+.title{
+  margin:25rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color:#fff;
+}
+.player .issue image{
+  animation: rotation 10s linear infinite;
+}
+.player .issue image,.player .issue{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+@keyframes rotation{
+
+    from {-webkit-transform: rotate(0deg);}
+
+    to {-webkit-transform: rotate(360deg);}
+
+	}
+
+.playbtn{
+  margin: 35rpx 40rpx 25rpx 20rpx;
+}
+.playbtn,.playbtn image{
+  width: 80rpx;
+  height: 80rpx;
+}

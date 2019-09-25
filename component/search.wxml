@@ -1,0 +1,26 @@
+<view>
+   <view class="search">
+  <input placeholder='搜索歌手、歌曲、专辑' bindconfirm='search'>
+     
+  </input>
+  <view bindtap='search'>
+     <image src="/component/search.png"></image>
+  </view>
+ 
+</view>
+  <view class="hot-search"> 
+    热门搜索
+  </view>
+  <view class="qq">
+    <view wx:for="{{hotList}}" wx:key="index">
+     <view class="ya" bindtap="kk"  data-first="{{item.first}}"  
+     >{{item.first}}</view>
+    </view>
+     
+     
+    
+  </view>
+
+</view>
+
+
